@@ -57,7 +57,7 @@
         android:id="@+id/button_fourth_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/go_to_screen_4"
+        android:text="@string/back_to_screen_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

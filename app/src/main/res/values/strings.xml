@@ -13,4 +13,5 @@
     <string name="masukan_alamat">Masukan alamat</string>
     <string name="masukan_pekerjaan">masukan Pekerjaan</string>
     <string name="go_to_screen_3">Go to screen 3</string>
+    <string name="back_to_screen_3">Back to screen 3</string>
 </resources>
