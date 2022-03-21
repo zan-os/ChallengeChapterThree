@@ -24,6 +24,11 @@ class ThirdFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val getNameBundle = ThirdFragmentArgs.fromBundle(arguments as Bundle).name
+
+        binding.textViewName.text = getNameBundle
+
         binding.buttonThirdScreen.setOnClickListener {
             it.findNavController().navigate(R.id.action_thirdFragment_to_fourthFragment)
         }
