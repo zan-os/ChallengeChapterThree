@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import com.example.challengechapterthree.R
 import com.example.challengechapterthree.databinding.FragmentSecondBinding
 
 class SecondFragment : Fragment() {
@@ -26,7 +25,11 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecondScreen.setOnClickListener {
-            it.findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+            val getNameInput = binding.editTextName.text.toString()
+
+            val moveToThirdFragment = SecondFragmentDirections.actionSecondFragmentToThirdFragment(getNameInput)
+
+            it.findNavController().navigate(moveToThirdFragment)
         }
     }
 
