@@ -8,7 +8,7 @@
     tools:context=".ui.FirstFragment">
 
     <TextView
-        android:id="@+id/tv_first_screen"
+        android:id="@+id/text_view_first_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/screen_1"
@@ -18,13 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_first_screen"
+        android:id="@+id/button_first_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/go_to_screen_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_first_screen" />
+        app:layout_constraintTop_toTopOf="@+id/text_view_first_screen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

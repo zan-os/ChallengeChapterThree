@@ -8,7 +8,7 @@
     tools:context=".ui.SecondFragment">
 
     <TextView
-        android:id="@+id/tv_second_screen"
+        android:id="@+id/text_view_second_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/screen_2"
@@ -18,25 +18,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/edit_text_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="@string/masukan_nama"
         android:autofillHints="name"
         android:inputType="textAutoComplete"
-        app:layout_constraintBottom_toTopOf="@+id/btn_second_screen"
+        app:layout_constraintBottom_toTopOf="@+id/button_second_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_second_screen"
+        android:id="@+id/button_second_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/go_to_screen_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_second_screen" />
+        app:layout_constraintTop_toTopOf="@id/text_view_second_screen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

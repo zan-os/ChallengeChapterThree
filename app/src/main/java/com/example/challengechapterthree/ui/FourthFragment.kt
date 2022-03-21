@@ -25,7 +25,7 @@ class FourthFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnFourthScreen.setOnClickListener {
+        binding.buttonFourthScreen.setOnClickListener {
             it.findNavController().navigate(R.id.action_fourthFragment_to_thirdFragment)
         }
     }

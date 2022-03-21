@@ -8,7 +8,7 @@
     tools:context=".ui.ThirdFragment">
 
     <TextView
-        android:id="@+id/tv_third_screen"
+        android:id="@+id/text_view_third_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/screen_3"
@@ -18,52 +18,52 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/text_view_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_age"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_age"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_age"
+        android:id="@+id/text_view_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/tv_address"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_address"
+        android:id="@+id/text_view_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/tv_job"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_job"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_job"
+        android:id="@+id/text_view_job"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/btn_third_screen"
+        app:layout_constraintBottom_toTopOf="@+id/button_third_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_third_screen"
+        android:id="@+id/button_third_screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/go_to_screen_4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_third_screen" />
+        app:layout_constraintTop_toTopOf="@id/text_view_third_screen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
