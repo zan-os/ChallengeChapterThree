@@ -5,10 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.challengechapterthree.R
 import com.example.challengechapterthree.databinding.FragmentFourthBinding
-import com.example.challengechapterthree.databinding.FragmentSecondBinding
 
 class FourthFragment : Fragment() {
     private var _binding: FragmentFourthBinding? = null
@@ -17,7 +16,7 @@ class FourthFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentFourthBinding.inflate(inflater, container, false)
         return binding.root
@@ -27,7 +26,7 @@ class FourthFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnFourthScreen.setOnClickListener {
-            Navigation.createNavigateOnClickListener(R.id.action_fourthFragment_to_thirdFragment)
+            it.findNavController().navigate(R.id.action_fourthFragment_to_thirdFragment)
         }
     }
 
