@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project/Kotlin/ChallengeChapterThree/app/src/main/res/drawable/button_shape.xml" value="0.256" />
+        <entry key="..\:/Project/Kotlin/ChallengeChapterThree/app/src/main/res/drawable/button_style.xml" value="0.256" />
         <entry key="..\:/Project/Kotlin/ChallengeChapterThree/app/src/main/res/drawable/edit_text_style.xml" value="0.256" />
         <entry key="..\:/Project/Kotlin/ChallengeChapterThree/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Project/Kotlin/ChallengeChapterThree/app/src/main/res/layout/fragment_first.xml" value="0.358695652173913" />

@@ -23,10 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:autofillHints="name"
-        android:padding="13dp"
         android:background="@drawable/edit_text_style"
         android:hint="@string/masukan_nama"
         android:inputType="textAutoComplete"
+        android:padding="13dp"
         app:layout_constraintBottom_toTopOf="@+id/button_second_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
