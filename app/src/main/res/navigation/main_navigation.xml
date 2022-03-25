@@ -42,7 +42,7 @@
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@android:anim/slide_in_left"
-            app:popExitAnim="@android:anim/slide_out_right"/>
+            app:popExitAnim="@android:anim/slide_out_right" />
         <argument
             android:name="name"
             android:defaultValue="default name"
@@ -52,6 +52,5 @@
         android:id="@+id/fourthFragment"
         android:name="com.example.challengechapterthree.ui.FourthFragment"
         android:label="fragment_fourth"
-        tools:layout="@layout/fragment_fourth">
-    </fragment>
+        tools:layout="@layout/fragment_fourth" />
 </navigation>
