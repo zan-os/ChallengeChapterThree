@@ -39,9 +39,9 @@ class ThirdFragment : Fragment() {
             val getJobBundle = person.getString(EXTRA_JOB)
 
             val getOddOrEven = if (getAgeBundle % 2 == 0) {
-                "$getAgeBundle, Usia anda genap"
+                "$getAgeBundle, Usia anda bernilai genap"
             } else {
-                "$getAgeBundle, Usia anda ganjil"
+                "$getAgeBundle, Usia anda bernilai ganjil"
             }
 
             binding.textViewAddress.visibility = View.VISIBLE
