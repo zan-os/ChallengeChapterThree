@@ -1,10 +1,10 @@
 package com.example.challengechapterthree.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.challengechapterthree.databinding.FragmentSecondBinding
 
@@ -24,10 +24,18 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         binding.buttonSecondScreen.setOnClickListener {
             val getNameInput = binding.editTextName.text.toString()
 
-            val moveToThirdFragment = SecondFragmentDirections.actionSecondFragmentToThirdFragment(getNameInput)
+            val moveToThirdFragment =
+                SecondFragmentDirections.actionSecondFragmentToThirdFragment(getNameInput)
+
+            if (binding.editTextName.text.isEmpty()) {
+                binding.editTextName.error = "Harap masukan nama"
+                return@setOnClickListener
+            }
 
             it.findNavController().navigate(moveToThirdFragment)
         }
