@@ -1,10 +1,10 @@
 package com.example.challengechapterthree.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
@@ -33,16 +33,22 @@ class ThirdFragment : Fragment() {
 
         binding.textViewName.text = getNameArgs
 
-        setFragmentResultListener(REQUEST_KEY) {_, person ->
+        setFragmentResultListener(REQUEST_KEY) { _, person ->
             val getAddressBundle = person.getString(EXTRA_ADDRESS)
             val getAgeBundle = person.getInt(EXTRA_AGE)
             val getJobBundle = person.getString(EXTRA_JOB)
+
+            val getOddOrEven = if (getAgeBundle % 2 == 0) {
+                "$getAgeBundle, Usia anda genap"
+            } else {
+                "$getAgeBundle, Usia anda ganjil"
+            }
 
             binding.textViewAddress.visibility = View.VISIBLE
             binding.textViewAddress.text = getAddressBundle
 
             binding.textViewAge.visibility = View.VISIBLE
-            binding.textViewAge.text = getAgeBundle.toString()
+            binding.textViewAge.text = getOddOrEven
 
             binding.textViewJob.visibility = View.VISIBLE
             binding.textViewJob.text = getJobBundle
